@@ -1,1 +1,1 @@
-GitHub page of [PKK Informatika](https://www.genome.gov/) website.
+GitHub page of [PKK Informatika](https://www.abhisena.netlify.app) website.
