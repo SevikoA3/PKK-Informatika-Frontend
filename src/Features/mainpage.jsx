@@ -29,7 +29,6 @@ export default function MainPage() {
 
       const rows = mahasigmaList.map((person, index) => (
         <Mahasigma
-          key={person.id} // Unique key for each component
           no={index + 1}
           name={person.name}
           kelompok={person.kelompok}
@@ -119,7 +118,7 @@ export default function MainPage() {
               Mahasigma <br />
               Of The Week
             </h1>
-            <div className="flex flex-col gap-4 mt-4">{mahasigmaRows}</div>
+            <div className="flex flex-col gap-16 mt-4">{mahasigmaRows}</div>
           </div>
 
           {/* dokumentasi */}
