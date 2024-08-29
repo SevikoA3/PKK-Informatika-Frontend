@@ -1,4 +1,3 @@
-import defaultImage from "../Assets/image2.png";
 import awan from "../Assets/awann 1.png";
 import logo from "../Assets/logo.png";
 import judul from "../Assets/judul.svg";
@@ -10,6 +9,7 @@ import { useEffect, useState } from "react";
 import db from "../Util/connect_db";
 import { collection, getDocs } from "firebase/firestore/lite";
 import Dokumentasi from "../Components/dokumentasi";
+import ReactPlayer from "react-player";
 
 export default function MainPage() {
   const [mahasigmaRows, setMahasigmaRows] = useState([]);
@@ -29,6 +29,7 @@ export default function MainPage() {
 
       const rows = mahasigmaList.map((person, index) => (
         <Mahasigma
+          key={person.id}
           no={index + 1}
           name={person.name}
           kelompok={person.kelompok}
@@ -48,7 +49,6 @@ export default function MainPage() {
         ...doc.data(),
         id: doc.id,
       }));
-      console.log(dokumentasiList);
       dokumentasiList.sort((a, b) => a.rank - b.rank);
 
       const rows = [];
@@ -64,7 +64,7 @@ export default function MainPage() {
         );
 
         if (index < dokumentasiList.length - 1) {
-          rows.push(<img src={Chain} alt="chain" />);
+          rows.push(<img key={`chain-${index}`} src={Chain} alt="chain" />);
         }
       });
       setDokumentasiRows(rows);
@@ -78,10 +78,13 @@ export default function MainPage() {
       <div className="relative min-h-screen w-full bg-[#233BA0] md:max-w-[35rem] pb-16 md:rounded-2xl overflow-hidden md:shadow-2xl">
         {/* header */}
         <div className="relative grid place-items-center">
-          <img
-            src={defaultImage}
-            alt="default"
-            className="object-cover w-full h-auto"
+          <ReactPlayer
+            url="https://firebasestorage.googleapis.com/v0/b/pkk-informatika.appspot.com/o/mini%20aftermovie.mp4?alt=media&token=36ba4c69-68b9-4af5-83e7-431705080cb1"
+            muted={true}
+            height="100%"
+            width="100%"
+            loop={true}
+            playing={true} // Ensure the video is playing
           />
           <img
             src={awan}
