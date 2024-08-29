@@ -3,6 +3,7 @@ export default function Dokumentasi({ drive, title, thumbnail }) {
         <a
             href={drive}
             className="w-full flex flex-col rounded-xl overflow-hidden text-white"
+            target="_blank"
             style={{
                 background: 'linear-gradient(135deg, #9F00B9 0%, #620DA5 55%, #185ABC 100%)',
                 padding: '8px',
