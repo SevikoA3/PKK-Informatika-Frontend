@@ -4,14 +4,14 @@ export default function Dokumentasi({ drive, title, thumbnail }) {
             href={drive}
             className="w-full flex flex-col rounded-xl overflow-hidden text-white"
             style={{
-                background: 'linear-gradient(90deg, #275BB2 0%, #5B17A8 42%, #8D05B4 100%)',
+                background: 'linear-gradient(135deg, #9F00B9 0%, #620DA5 55%, #185ABC 100%)',
                 padding: '8px',
                 borderRadius: '16px',
             }}
         >
             <div
                 style={{
-                    background: '#000',
+                    background: 'linear-gradient(90deg, #275BB1 24%, #610FA6 65%, #8E04B4 100%)',
                     borderRadius: 'inherit',
                     padding: '8px', 
                 }}
