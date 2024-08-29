@@ -5,24 +5,24 @@ export default function Dokumentasi({ drive, title, thumbnail }) {
             className="w-full flex flex-col rounded-xl overflow-hidden text-white"
             style={{
                 background: 'linear-gradient(90deg, #275BB2 0%, #5B17A8 42%, #8D05B4 100%)',
-                padding: '8px', // Equal to the border width you wanted
-                borderRadius: '16px', // Adjust based on your original border-radius
+                padding: '8px',
+                borderRadius: '16px',
             }}
         >
             <div
                 style={{
-                    background: '#000', // The color of the inner container
-                    borderRadius: 'inherit', // Ensures the inner content stays rounded
-                    padding: '8px', // Optional, adds spacing inside the inner container
+                    background: '#000',
+                    borderRadius: 'inherit',
+                    padding: '8px', 
                 }}
             >
                 <img
                     src={thumbnail}
                     alt={title}
-                    className="w-full h-auto aspect-video object-cover bg-white rounded-lg" // Maintain rounded corners inside
+                    className="w-full h-auto aspect-video object-cover bg-white rounded-lg"
                 />
-                <div className="pl-3 py-2">
-                    <h2 className="font-bold">{title}</h2>
+                <div className="pl-3 py-4">
+                    <h2 className="font-bold md:text-2xl">{title}</h2>
                 </div>
             </div>
         </a>
