@@ -1,1 +1,1 @@
-GitHub page of [PKK Informatika](https://www.abhisena.netlify.app) website.
+GitHub page of [PKK Informatika](https://abhisena.netlify.app/) website.
