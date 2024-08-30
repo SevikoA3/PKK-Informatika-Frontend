@@ -112,13 +112,13 @@ export default function MainPage() {
           <img
             src={cover}
             alt="cover"
-            className="transform absolute left-1/2 -translate-x-1/2 top-24 md:top-36 w-full h-auto p-10 z-30"
+            className="transform absolute left-1/2 -translate-x-1/2 top-10 md:top-28 w-full h-auto p-10 z-30"
           />
           <div className="w-full h-[313px] bg-custom-gradient1 absolute -bottom-1" />
         </div>
 
         {/* isi */}
-        <div className="-mt-40 mb-20 md:mb-28">
+        <div className="-mt-64 mb-20 md:mb-28">
           {/* mahasigma */}
           <div className="flex flex-col z-20 w-full px-10">
             <h1 className="relative z-20 text-white text-3xl md:text-5xl font-bold">
@@ -130,7 +130,7 @@ export default function MainPage() {
 
           {/* dokumentasi */}
           <div className="mt-20 px-10 flex flex-col items-center">
-            <h1 className="z-20 text-white text-2xl md:text-4xl font-bold mb-5 w-full text-right">
+            <h1 className="z-20 text-white text-2xl md:text-4xl font-bold mb-3 w-full text-right">
               Documentation 📷
             </h1>
             {dokumentasiRows}
