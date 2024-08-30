@@ -7,7 +7,7 @@ export default function Mahasigma({ no, name, kelompok, image }) {
                     <p className="text-5xl font-bold">{no}</p>
                 </div>
                 <div className="max-w-1/2 tracking-tighter">
-                    <p className="text-xl font-semibold">{name}</p>
+                    <p className="text-xl font-semibold relative z-30">{name}</p>
                     <p className="text-sm pb-2">{kelompok}</p>
                 </div>
             </div>
