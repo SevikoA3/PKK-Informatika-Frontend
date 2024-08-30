@@ -112,7 +112,7 @@ export default function MainPage() {
           <img
             src={cover}
             alt="cover"
-            className="transform absolute left-1/2 -translate-x-1/2 top-24 md:top-36 w-full h-auto p-10"
+            className="transform absolute left-1/2 -translate-x-1/2 top-24 md:top-36 w-full h-auto p-10 z-30"
           />
           <div className="w-full h-[313px] bg-custom-gradient1 absolute -bottom-1" />
         </div>
@@ -121,11 +121,11 @@ export default function MainPage() {
         <div className="-translate-y-40">
           {/* mahasigma */}
           <div className="flex flex-col z-20 w-full px-10">
-            <h1 className="relative z-20 text-white text-2xl md:text-5xl font-bold">
+            <h1 className="relative z-20 text-white text-3xl md:text-5xl font-bold">
               Mahasigma <br />
               Of The Week
             </h1>
-            <div className="flex flex-col gap-5 md:gap-16 mt-4">{mahasigmaRows}</div>
+            <div className="flex flex-col gap-7 mt-4">{mahasigmaRows}</div>
           </div>
 
           {/* dokumentasi */}
