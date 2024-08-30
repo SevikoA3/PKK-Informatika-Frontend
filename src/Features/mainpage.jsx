@@ -98,7 +98,7 @@ export default function MainPage() {
           <img
             src={judul}
             alt="judul"
-            className="absolute z-30 bottom-0 translate-y-24 w-full h-auto"
+            className="absolute z-30 bottom-0 translate-y-24 md:translate-y-40 w-full h-auto p-5"
           />
         </div>
 
@@ -112,7 +112,7 @@ export default function MainPage() {
           <img
             src={cover}
             alt="cover"
-            className="transform absolute left-1/2 -translate-x-1/2 top-24 w-full h-auto"
+            className="transform absolute left-1/2 -translate-x-1/2 top-24 md:top-36 w-full h-auto p-10"
           />
           <div className="w-full h-[313px] bg-custom-gradient1 absolute -bottom-1" />
         </div>
