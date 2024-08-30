@@ -118,7 +118,7 @@ export default function MainPage() {
         </div>
 
         {/* isi */}
-        <div className="-mt-64 mb-20 md:mb-28">
+        <div className="md:-mt-64 -mt-56 mb-20 md:mb-28">
           {/* mahasigma */}
           <div className="flex flex-col z-20 w-full px-10">
             <h1 className="relative z-20 text-white text-3xl md:text-5xl font-bold">
