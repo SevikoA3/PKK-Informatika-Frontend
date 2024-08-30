@@ -12,7 +12,7 @@ export default function Mahasigma({ no, name, kelompok, image }) {
                 </div>
             </div>
             <img src={image} alt="mahasigma" className="rounded-lg h-[10rem] absolute bottom-0 right-0" />
-            <p className="p-1 bg-[#E85C0D] text-[#FABC3F] absolute tracking-tighter bottom-0 right-0 text-xs rounded-md">+{no < 2 ? 10000: 5000} aura</p>
+            <p className="p-1 bg-[#E85C0D] text-[#FABC3F] absolute tracking-tighter bottom-0 right-0 text-xs rounded-md">+{no < 2 ? 10000: 5000} Aura</p>
         </div>
     );
 }
