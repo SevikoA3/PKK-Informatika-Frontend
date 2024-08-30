@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import db from "../Util/connect_db";
 import { collection, getDocs } from "firebase/firestore/lite";
 import Dokumentasi from "../Components/dokumentasi";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 
 export default function MainPage() {
   const [mahasigmaRows, setMahasigmaRows] = useState([]);
@@ -84,7 +84,11 @@ export default function MainPage() {
             height="100%"
             width="100%"
             loop={true}
-            playing={true} // Ensure the video is playing
+            playing={true}
+            pip={false}
+            stopOnUnmount={false}
+            controls={false}
+            playsinline={true}
           />
           <img
             src={awan}
@@ -121,7 +125,7 @@ export default function MainPage() {
               Mahasigma <br />
               Of The Week
             </h1>
-            <div className="flex flex-col gap-16 mt-4">{mahasigmaRows}</div>
+            <div className="flex flex-col gap-5 md:gap-16 mt-4">{mahasigmaRows}</div>
           </div>
 
           {/* dokumentasi */}
