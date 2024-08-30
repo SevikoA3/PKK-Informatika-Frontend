@@ -15,15 +15,14 @@ export default function Dokumentasi({ drive, title, thumbnail }) {
                 style={{
                     background: 'linear-gradient(90deg, #275BB1 24%, #610FA6 65%, #8E04B4 100%)',
                     borderRadius: '8px',
-                    padding: '8px', 
                 }}
             >
                 <img
                     src={thumbnail}
                     alt={title}
-                    className="w-full h-auto aspect-video object-cover bg-white rounded-lg"
+                    className="w-full h-auto aspect-video object-cover bg-white rounded-t-lg"
                 />
-                <div className="pl-3 py-4">
+                <div className="pl-3 py-2 md:py-4">
                     <h2 className="font-bold md:text-2xl">{title}</h2>
                 </div>
             </div>
