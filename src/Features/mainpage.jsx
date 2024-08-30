@@ -1,7 +1,7 @@
 import awan from "../Assets/awann 1.png";
 import logo from "../Assets/logo.png";
 import judul from "../Assets/judul.svg";
-import cover from "../Assets/cover.svg";
+import cover from "../Assets/cover.png";
 import Mahasigma from "../Components/mahasigma";
 import Chain from "../Assets/chain.svg";
 import footer from "../Assets/footer.svg";
