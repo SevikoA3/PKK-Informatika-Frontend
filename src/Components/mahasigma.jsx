@@ -3,7 +3,7 @@ export default function Mahasigma({ no, name, kelompok, image }) {
         <div className="bg-custom-gradient3 rounded-lg w-full text-white flex justify-between pl-4 pt-2 relative shadow-2xl">
             <div className="flex flex-col gap-7">
                 <div className="flex pt-3">
-                    <p className="text-2xl">#</p>
+                    <p className="text-2xl font-semibold">#</p>
                     <p className="text-3xl md:text-4xl font-bold relative z-30">{no < 2 ? "King👑": "Queen✨"}</p>
                 </div>
                 <div className="max-w-1/2 tracking-tighter">
