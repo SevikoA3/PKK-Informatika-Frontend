@@ -118,7 +118,7 @@ export default function MainPage() {
         </div>
 
         {/* isi */}
-        <div className="-translate-y-40">
+        <div className="-mt-40 mb-20 md:mb-28">
           {/* mahasigma */}
           <div className="flex flex-col z-20 w-full px-10">
             <h1 className="relative z-20 text-white text-3xl md:text-5xl font-bold">
@@ -129,7 +129,7 @@ export default function MainPage() {
           </div>
 
           {/* dokumentasi */}
-          <div className="mt-16 px-10 flex flex-col items-center">
+          <div className="mt-20 px-10 flex flex-col items-center">
             <h1 className="z-20 text-white text-2xl md:text-4xl font-bold mb-5 w-full text-right">
               Documentation 📷
             </h1>

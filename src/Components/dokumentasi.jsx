@@ -14,7 +14,7 @@ export default function Dokumentasi({ drive, title, thumbnail }) {
             <div
                 style={{
                     background: 'linear-gradient(90deg, #275BB1 24%, #610FA6 65%, #8E04B4 100%)',
-                    borderRadius: 'inherit',
+                    borderRadius: '8px',
                     padding: '8px', 
                 }}
             >
