@@ -11,7 +11,9 @@ export default function Mahasigma({ no, name, kelompok, image }) {
                     <p className="text-sm pb-2">{kelompok}</p>
                 </div>
             </div>
-            <img src={image} alt="mahasigma" className="rounded-lg h-[10rem] absolute bottom-0 right-0" />
+
+            {/* remove easter egg after a fix mahasigma is announced */}
+            <img src={image} alt="mahasigma" className="rounded-lg h-[10rem] absolute bottom-0 right-0" onClick={() => window.open('https://www.youtube.com/watch?v=jyR79y-P1TI', '_blank')}/>
             <p className="p-1 bg-[#E85C0D] text-[#FABC3F] absolute tracking-tighter bottom-0 right-0 text-xs rounded-md">+10000 Aura</p>
         </div>
     );
