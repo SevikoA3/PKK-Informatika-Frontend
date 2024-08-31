@@ -1,4 +1,4 @@
-export default function Dokumentasi({ drive, title, thumbnail }) {
+export default function Dokumentasi({ drive, title, thumbnail, date }) {
     return (
         <a
             href={drive}
@@ -24,6 +24,7 @@ export default function Dokumentasi({ drive, title, thumbnail }) {
                 />
                 <div className="pl-3 py-2 md:py-4">
                     <h2 className="font-bold md:text-2xl">{title}</h2>
+                    <p className="text-xs md:text-base">{date}</p>
                 </div>
             </div>
         </a>

@@ -29,7 +29,6 @@ export default function MainPage() {
 
       const rows = mahasigmaList.map((person, index) => (
         <Mahasigma
-          key={person.id}
           no={index + 1}
           name={person.name}
           kelompok={person.kelompok}
@@ -60,6 +59,7 @@ export default function MainPage() {
             drive={dokumentasi.drive}
             title={dokumentasi.title}
             thumbnail={dokumentasi.thumbnail}
+            date={dokumentasi.date}
           />
         );
 
