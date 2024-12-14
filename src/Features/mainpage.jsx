@@ -27,12 +27,13 @@ export default function MainPage() {
 
       mahasigmaList.sort((a, b) => a.rank - b.rank);
 
-      const rows = mahasigmaList.map((person, index) => (
+      const rows = mahasigmaList.map((team, index) => (
         <Mahasigma
           no={index + 1}
-          name={person.name}
-          kelompok={person.kelompok}
-          image={person.image}
+          name={team.name}
+          kelompok={team.kelompok}
+          image={team.image}
+          url={team.url}
         />
       ));
 
@@ -122,10 +123,9 @@ export default function MainPage() {
           {/* mahasigma */}
           <div className="flex flex-col z-20 w-full px-10">
             <h1 className="relative z-20 text-white text-3xl md:text-5xl font-bold">
-              Mahasigma <br />
-              Of The Week
+              Best Project 😋
             </h1>
-            <div className="flex flex-col gap-7 mt-4">{mahasigmaRows}</div>
+            <div className="flex flex-col gap-10 mt-4">{mahasigmaRows}</div>
           </div>
 
           {/* dokumentasi */}
